@@ -349,8 +349,36 @@
         "version": "af43f1d20a34fa56542ce2093fd9af37cb4f3076a648b63fd46b1ffac8948c9e",
         "signature": "af43f1d20a34fa56542ce2093fd9af37cb4f3076a648b63fd46b1ffac8948c9e"
       },
+      "../src/post/post.service.ts": {
+        "version": "2e2d69482e30793462425be7303b0091b714604dd63920c4713c2f7db279db57",
+        "signature": "32f09511418edb736a01f8031827098621fb5a2eb0918f83ed3436afc9314c32"
+      },
+      "../src/post/post.controller.ts": {
+        "version": "2485de9c9f0e731d42af3e1e65248761ffe084f04427b8c0dd19ae0eabe95898",
+        "signature": "8ca611a46679a448cfa736e3c707adbf0783dea92ff714964e78afbd374f7fb1"
+      },
+      "../src/app/app.middleware.ts": {
+        "version": "dd81de29346ac624ad2131eaf51234ef67f83bbecbd8f86cf6114768a280065c",
+        "signature": "3262a680cbe712911a554a6e0aa6e97c0b70d329d3983678a5cb7f7b98cc575f"
+      },
+      "../src/post/post.router.ts": {
+        "version": "4374bd86338d24b9b185c3226da0d21bd3e419c84e7b207162f5633e4fda2261",
+        "signature": "c106970ee4b686b5ebf0964ea4e0d1b2af02bdecd2d5cfeecedeb7bb5b2f404b"
+      },
+      "../src/app/index.ts": {
+        "version": "b7d9746118956514b3af729f45125917e191b4ddb252c6c9ee07d21556455d06",
+        "signature": "4654f92731de7c18eb496ebf4134d15c881a25c2d6579affd293cde1951e4ced"
+      },
+      "../node_modules/dotenv/types/index.d.ts": {
+        "version": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528",
+        "signature": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528"
+      },
+      "../src/app/app.config.ts": {
+        "version": "235f64cd9e7dbfcc5b1bac69b23413c68eaa3dbe75549d1cf9ea00eec0b56cbf",
+        "signature": "cfb831aef452fa57d4e42b870ccc3c4a8354e9135aa56345092239db6927a6f4"
+      },
       "../src/main.ts": {
-        "version": "424e6031504218d69c235e1af2130231a65794459f64ff29db9e3738149d0cb1",
+        "version": "694a243c7db5cf79133521b7c0201520b3e84ad929216df62bafd5645246d13c",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       }
     },
@@ -563,8 +591,32 @@
         "../node_modules/@types/serve-static/index.d.ts",
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
-      "../src/main.ts": [
+      "../src/post/post.controller.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/post/post.service.ts"
+      ],
+      "../src/app/app.middleware.ts": [
         "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/post/post.router.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/post/post.controller.ts",
+        "../src/app/app.middleware.ts"
+      ],
+      "../src/app/index.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/post/post.router.ts",
+        "../src/app/app.middleware.ts"
+      ],
+      "../node_modules/dotenv/types/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../src/app/app.config.ts": [
+        "../node_modules/dotenv/types/index.d.ts"
+      ],
+      "../src/main.ts": [
+        "../src/app/index.ts",
+        "../src/app/app.config.ts"
       ]
     },
     "exportedModulesMap": {
@@ -759,6 +811,23 @@
         "../node_modules/@types/body-parser/index.d.ts",
         "../node_modules/@types/serve-static/index.d.ts",
         "../node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
+      "../src/post/post.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/app/app.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/post/post.router.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
+      "../src/app/index.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
+      "../node_modules/dotenv/types/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -849,7 +918,14 @@
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
-      "../src/main.ts"
+      "../src/post/post.service.ts",
+      "../node_modules/dotenv/types/index.d.ts",
+      "../src/app/app.config.ts",
+      "../src/main.ts",
+      "../src/post/post.controller.ts",
+      "../src/app/app.middleware.ts",
+      "../src/app/index.ts",
+      "../src/post/post.router.ts"
     ]
   },
   "version": "3.8.3"

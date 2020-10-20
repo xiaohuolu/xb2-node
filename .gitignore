@@ -123,3 +123,6 @@ node_modules/
 
 ### 其他 ###
 *.iws
+
+# App
+.env*
