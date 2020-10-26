@@ -498,15 +498,15 @@
         "signature": "b0ffadad6509cf50a58ae27c501fe1aa84d41148eb374e6784d83557fcc4a6d5"
       },
       "../src/user/user.service.ts": {
-        "version": "1b57e12dc795f0f2e467a851daa510afe15b23c3311d1f07aa4e36bcf595ecd6",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        "version": "6c3ef9915755619838d50e57f7061dab09e044182bc0f7a98372ebd11a398862",
+        "signature": "f4f5eebfb398c00456a63841f20e512878a9b872a6f573b8358d50c6edb34490"
       },
       "../src/user/user.controller.ts": {
-        "version": "6a509584fa461f0df9882afa5e104b4a557ec7fa1a68233ebaf4671985b41a12",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        "version": "ee1b8ad55e7b1f2d60721d5468bd75c0ad8364d50792c3c8dd845e1b088e9727",
+        "signature": "8e9a074bd412b3fe2b17238730e79a93a9e530da749557ea1dd094cce27b477a"
       },
       "../src/user/user.router.ts": {
-        "version": "1f484af2d20fc1078b19249bff8b5c084f67352910e1ae8568dd9c51843dcf3c",
+        "version": "65b2c45c9e407fad23beba569217aebc023bb2e23fcf4aa24e90e666734f5482",
         "signature": "c106970ee4b686b5ebf0964ea4e0d1b2af02bdecd2d5cfeecedeb7bb5b2f404b"
       },
       "../src/app/index.ts": {
@@ -1469,6 +1469,16 @@
       "../src/post/post.router.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
+      "../src/user/user.service.ts": [
+        "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../src/user/user.model.ts"
+      ],
+      "../src/user/user.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
       "../src/user/user.router.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
@@ -1603,10 +1613,10 @@
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
       "../src/user/user.controller.ts",
-      "../src/user/user.router.ts",
+      "../src/app/index.ts",
       "../src/main.ts",
       "../src/user/user.middleware.ts",
-      "../src/app/index.ts"
+      "../src/user/user.router.ts"
     ]
   },
   "version": "3.8.3"
