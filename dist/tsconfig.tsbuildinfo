@@ -505,8 +505,12 @@
         "version": "ee1b8ad55e7b1f2d60721d5468bd75c0ad8364d50792c3c8dd845e1b088e9727",
         "signature": "8e9a074bd412b3fe2b17238730e79a93a9e530da749557ea1dd094cce27b477a"
       },
+      "../src/user/user.middleware.ts": {
+        "version": "8672300a21c25c3f8b245f8b0606c33a540e18c5df552d0828669ac07cbf8095",
+        "signature": "5da9c8b8a22621f6b7ea90b5e6746e5b51bdc82eb8c540b293ae2113325c1560"
+      },
       "../src/user/user.router.ts": {
-        "version": "65b2c45c9e407fad23beba569217aebc023bb2e23fcf4aa24e90e666734f5482",
+        "version": "f09b7246c9ca2bef198b473d617e1b48b6ff9d7f5ec107e668b3a2833dd09d0e",
         "signature": "c106970ee4b686b5ebf0964ea4e0d1b2af02bdecd2d5cfeecedeb7bb5b2f404b"
       },
       "../src/app/index.ts": {
@@ -515,10 +519,6 @@
       },
       "../src/main.ts": {
         "version": "a2f6b8fa64d444f79080912cdc7e62dd461be43fc5b65de1a1be6f3c7cd09670",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
-      },
-      "../src/user/user.middleware.ts": {
-        "version": "1f6ba3dbc28c9c3a81d5e54ebc1e83881909c3a8e5fb18b44a0c10ed16c9460b",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       }
     },
@@ -1000,9 +1000,14 @@
         "../src/user/user.model.ts",
         "../src/user/user.service.ts"
       ],
+      "../src/user/user.middleware.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/user/user.service.ts"
+      ],
       "../src/user/user.router.ts": [
         "../node_modules/@types/express/index.d.ts",
-        "../src/user/user.controller.ts"
+        "../src/user/user.controller.ts",
+        "../src/user/user.middleware.ts"
       ],
       "../src/app/index.ts": [
         "../node_modules/@types/express/index.d.ts",
@@ -1014,10 +1019,6 @@
         "../src/app/index.ts",
         "../src/app/app.config.ts",
         "../src/app/database/mysql.ts"
-      ],
-      "../src/user/user.middleware.ts": [
-        "../node_modules/@types/express/index.d.ts",
-        "../src/user/user.service.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1479,6 +1480,10 @@
         "../node_modules/@types/express-serve-static-core/index.d.ts",
         "../node_modules/@types/express/index.d.ts"
       ],
+      "../src/user/user.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
       "../src/user/user.router.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
@@ -1613,9 +1618,9 @@
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
       "../src/user/user.controller.ts",
+      "../src/user/user.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
-      "../src/user/user.middleware.ts",
       "../src/user/user.router.ts"
     ]
   },
