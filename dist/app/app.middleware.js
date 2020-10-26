@@ -5,6 +5,9 @@ exports.requestUrl = (request, response, next) => {
     next();
 };
 exports.defaultErrorHandler = (error, request, response, next) => {
+    if (error.message) {
+        console.log(error.message);
+    }
     let statusCode, message;
     switch (error.message) {
         default:

@@ -1,17 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getPosts = () => {
-    const data = [
-        {
-            content: '明月出天山，苍茫云海间1',
-        },
-        {
-            content: '明月出天山，苍茫云海间2',
-        },
-        {
-            content: '明月出天山，苍茫云海间3',
-        },
-    ];
+const mysql_1 = require("../app/database/mysql");
+exports.getPosts = async () => {
+    const statement = `
+    SELECT 
+      post.id,
+      post.title,
+      post.content,
+      JSON_OBJECT(
+       'id', user.id,
+       'name', user.name
+      ) as user
+    FROM post
+    LEFT JOIN user
+     ON user.id = post.userId
+  `;
+    const [data] = await mysql_1.connection.promise().query(statement);
     return data;
 };
 //# sourceMappingURL=post.service.js.map
