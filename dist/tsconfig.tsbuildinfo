@@ -1038,6 +1038,7 @@
       ],
       "../src/main.ts": [
         "../src/app/index.ts",
+ 
         "../src/app/app.config.ts"
       ],
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts": [
@@ -1090,6 +1091,7 @@
       "../node_modules/@types/mysql2/index.d.ts": [
         "../node_modules/@types/mysql2/promise.d.ts",
         "../node_modules/@types/mysql/index.d.ts"
+ 
         "../src/app/database/mysql.ts"
       ]
     },
@@ -1545,6 +1547,7 @@
       "../src/app/index.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
  
+ 
       ],
       "../node_modules/dotenv/types/index.d.ts": [
         "../node_modules/@types/node/index.d.ts"
@@ -1599,6 +1602,7 @@
       "../node_modules/@types/mysql2/index.d.ts": [
         "../node_modules/@types/mysql2/promise.d.ts",
         "../node_modules/@types/mysql/index.d.ts"
+ 
  
       ]
     },
@@ -1690,7 +1694,6 @@
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
- 
       "../node_modules/@types/lodash/common/common.d.ts",
       "../node_modules/@types/lodash/common/array.d.ts",
       "../node_modules/@types/lodash/common/collection.d.ts",
@@ -1722,8 +1725,7 @@
       "../node_modules/dotenv/types/index.d.ts",
       "../src/app/app.config.ts",
       "../src/app/database/mysql.ts",
-      "../src/post/post.model.ts",
- 
+      "../src/post/post.model.ts", 
       "../src/post/post.service.ts",
       "../src/post/post.controller.ts",
       "../src/post/post.router.ts",
@@ -1732,6 +1734,7 @@
       "../src/app/app.config.ts",
       "../src/main.ts"
       "../src/app/index.ts",
+      "../src/main.ts",
       "../src/post/post.router.ts"
  
     ]

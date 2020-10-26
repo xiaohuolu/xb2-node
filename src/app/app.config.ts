@@ -13,7 +13,7 @@ export const { APP_PORT } = process.env;
  */
 export const {
     MYSQL_HOST,
-    MYSQL_POST,
+    MYSQL_PORT,
     MYSQL_USER,
     MYSQL_PASSWORD,
     MYSQL_DATABASE
