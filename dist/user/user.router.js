@@ -14,6 +14,6 @@ const express_1 = __importDefault(require("express"));
 const userController = __importStar(require("./user.controller"));
 const user_middleware_1 = require("./user.middleware");
 const router = express_1.default.Router();
-router.post('/users', user_middleware_1.validateUserData, userController.store);
+router.post('/users', user_middleware_1.validateUserData, user_middleware_1.hashPassword, userController.store);
 exports.default = router;
 //# sourceMappingURL=user.router.js.map

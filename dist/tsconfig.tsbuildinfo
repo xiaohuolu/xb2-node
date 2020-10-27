@@ -505,12 +505,16 @@
         "version": "ee1b8ad55e7b1f2d60721d5468bd75c0ad8364d50792c3c8dd845e1b088e9727",
         "signature": "8e9a074bd412b3fe2b17238730e79a93a9e530da749557ea1dd094cce27b477a"
       },
+      "../node_modules/@types/bcrypt/index.d.ts": {
+        "version": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba",
+        "signature": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba"
+      },
       "../src/user/user.middleware.ts": {
-        "version": "ea34f4d954a1ccb622ed78048c0eeb21d6809263253a7ddf1f9ebc4471ee7a66",
-        "signature": "5da9c8b8a22621f6b7ea90b5e6746e5b51bdc82eb8c540b293ae2113325c1560"
+        "version": "d14d454f2d9227d2bb2cdb62f2d7c96eb69116b753736549732b5fc853028420",
+        "signature": "bcb8b404538bd814acbe2b08ecdf06abfff06be5ebfb5c1d95a929b6f987ff12"
       },
       "../src/user/user.router.ts": {
-        "version": "f09b7246c9ca2bef198b473d617e1b48b6ff9d7f5ec107e668b3a2833dd09d0e",
+        "version": "a2810eaf4af33c0c5e3f5db03be6e2182dd8eb854e0c6692bf52436c48543c2d",
         "signature": "c106970ee4b686b5ebf0964ea4e0d1b2af02bdecd2d5cfeecedeb7bb5b2f404b"
       },
       "../src/app/index.ts": {
@@ -1002,6 +1006,7 @@
       ],
       "../src/user/user.middleware.ts": [
         "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/bcrypt/index.d.ts",
         "../src/user/user.service.ts"
       ],
       "../src/user/user.router.ts": [
@@ -1618,10 +1623,11 @@
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
       "../src/user/user.controller.ts",
-      "../src/user/user.router.ts",
+      "../node_modules/@types/bcrypt/index.d.ts",
+      "../src/user/user.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
-      "../src/user/user.middleware.ts"
+      "../src/user/user.router.ts"
     ]
   },
   "version": "3.8.3"
