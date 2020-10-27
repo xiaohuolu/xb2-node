@@ -62,7 +62,7 @@ local.properties
 nbproject/private/
 build/
 nbbuild/
-#dist/
+dist/
 nbdist/
 .nb-gradle/
 ticket-static/.sass-cache/
@@ -110,7 +110,7 @@ Icon
 
 ### .DS_Store ###
 node_modules/
-# /dist/
+/dist/
 # npm-debug.log*
 # yarn-debug.log*
 # yarn-error.log*
