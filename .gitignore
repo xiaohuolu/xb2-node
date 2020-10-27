@@ -62,7 +62,7 @@ local.properties
 nbproject/private/
 build/
 nbbuild/
-#dist/
+dist/
 nbdist/
 .nb-gradle/
 ticket-static/.sass-cache/
