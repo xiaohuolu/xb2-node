@@ -18,6 +18,10 @@ exports.defaultErrorHandler = (error, request, response, next) => {
             statusCode = 400;
             message = '请提供用户密码';
             break;
+        case 'USER_ALREADY_EXIST':
+            statusCode = 409;
+            message = '用户名已被占用';
+            break;
         default:
             statusCode = 500;
             message = '服务暂时出了点问题~';
