@@ -498,8 +498,8 @@
         "signature": "b0ffadad6509cf50a58ae27c501fe1aa84d41148eb374e6784d83557fcc4a6d5"
       },
       "../src/user/user.service.ts": {
-        "version": "6c3ef9915755619838d50e57f7061dab09e044182bc0f7a98372ebd11a398862",
-        "signature": "f4f5eebfb398c00456a63841f20e512878a9b872a6f573b8358d50c6edb34490"
+        "version": "d918e4032946f82e08eb57808f68618774cecc25bd199e42fc52a405dc82e5e8",
+        "signature": "3f37df6924e82f0e416912a636da2193dc7d8a8368f8a104949485d6d0c7a0f0"
       },
       "../src/user/user.controller.ts": {
         "version": "ee1b8ad55e7b1f2d60721d5468bd75c0ad8364d50792c3c8dd845e1b088e9727",
@@ -1613,15 +1613,15 @@
       "../src/post/post.model.ts",
       "../src/post/post.service.ts",
       "../src/post/post.controller.ts",
+      "../src/app/app.middleware.ts",
       "../src/post/post.router.ts",
       "../src/user/user.model.ts",
-      "../src/user/user.service.ts",
-      "../src/user/user.controller.ts",
-      "../src/user/user.middleware.ts",
       "../src/user/user.router.ts",
       "../src/app/index.ts",
       "../src/main.ts",
-      "../src/app/app.middleware.ts"
+      "../src/user/user.service.ts",
+      "../src/user/user.middleware.ts",
+      "../src/user/user.controller.ts"
     ]
   },
   "version": "3.8.3"
