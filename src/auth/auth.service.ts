@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { connection } from "src/app/database/mysql";
+import { connection } from "../app/database/mysql";
 import { PRIVATE_KEY } from "../app/app.config";
 
 /**
