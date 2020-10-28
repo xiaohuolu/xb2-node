@@ -127,3 +127,4 @@ node_modules/
 # App
 .env*
 config/*.key
+/uploads
