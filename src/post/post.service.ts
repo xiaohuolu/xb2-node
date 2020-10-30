@@ -1,5 +1,5 @@
-import {connection} from '../app/database/mysql';
-import { PostModel } from './post.model';
+import { connection } from "../app/database/mysql";
+import { PostModel } from "./post.model";
 /**
  * 获取内容列表
  */
@@ -25,23 +25,23 @@ export const getPosts = async () => {
 /**
  * 创建内容
  */
-export const createPost = async (post:PostModel) =>{
+export const createPost = async (post: PostModel) => {
   // 准备查询
   const statement = `
     INSERT INTO post
     SET ?
-  `
+  `;
   //执行查询
-  const [data] = await connection.promise().query(statement,post)
-  
+  const [data] = await connection.promise().query(statement, post);
+
   //提供数据
   return data;
-}
+};
 
 /**
  * 更新内容
  */
-export const updatePost = async (postId:number,post:PostModel) =>{
+export const updatePost = async (postId: number, post: PostModel) => {
   //准备查询
   const statement = `
    UPDATE post
@@ -49,25 +49,25 @@ export const updatePost = async (postId:number,post:PostModel) =>{
    WHERE id = ?  
   `;
   //执行查询
-  const [data] = await connection.promise().query(statement,[post,postId]);
+  const [data] = await connection.promise().query(statement, [post, postId]);
 
   //提供数据
   return data;
-}
+};
 
 /**
  * 删除内容
  */
-export const deletePost = async (postId:number)=>{
+export const deletePost = async (postId: number) => {
   //准备查询
   const statement = `
     DELETE FROM post
     WHERE id = ?
-  `
+  `;
 
   // 执行查询
-  const [data] = await connection.promise().query(statement,postId);
+  const [data] = await connection.promise().query(statement, postId);
 
   //提供数据
   return data;
-}
+};
