@@ -105,3 +105,19 @@ export const postHasTag = async (postId: number, tagId: number) => {
   // 提供数据
   return data[0] ? true : false;
 };
+
+/**
+ * 删除内容标签
+ */
+export const deletePostTag = async (postId: number, tagId: number) => {
+  // 准备查询
+  const statement = `
+      DELETE FROM post_tag
+      WHERE postId = ? AND tagId = ?
+    `;
+  // 执行查询
+  const [data] = await connection.promise().query(statement, [postId, tagId]);
+
+  // 提供数据
+  return data;
+};
