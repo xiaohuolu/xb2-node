@@ -17,3 +17,19 @@ export const createComment = async (comment: CommentModel) => {
   // 提供数据
   return data;
 };
+
+/**
+ * 检查评论是否是回复评论
+ */
+export const isReplyComment = async (commentId: number) => {
+  // 准备查询
+  const statement = `
+      SELECT parentId FROM comment
+      WHERE id = ?
+    `;
+  // 执行查询
+  const [data] = await connection.promise().query(statement, commentId);
+
+  // 提供数据
+  return data[0].parentId ? true : false;
+};
