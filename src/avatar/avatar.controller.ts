@@ -50,7 +50,7 @@ export const serve = async (
     //   查找头像信息
     const avatar = await findAvatarByUserId(parseInt(userId, 10));
     if (!avatar) {
-      throw new Error("FILE_NOT_FIND");
+      throw new Error("FILE_NOT_FOUND");
     }
 
     // 要提供的头像尺寸
@@ -65,7 +65,7 @@ export const serve = async (
       const imageSizes = ["large", "medium", "small"];
       // 测试可用的头像尺寸
       if (!imageSizes.some((item) => item == size)) {
-        throw new Error("FILE_NOT_FIND");
+        throw new Error("FILE_NOT_FOUND");
       }
 
       // 检查文件是否存在
@@ -74,11 +74,11 @@ export const serve = async (
       );
 
       if (!fileExist) {
-        throw new Error("FILE_NOT_FIND");
+        throw new Error("FILE_NOT_FOUND");
       }
       if (fileExist) {
-        filename = `${filename}-${size}`; // 文件名
-        root = path.join(root, resized); //目录路径
+        filename = `${filename}-${size}`;
+        root = path.join(root, resized);
       }
     }
     //做出响应

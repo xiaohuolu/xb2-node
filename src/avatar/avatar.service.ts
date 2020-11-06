@@ -24,7 +24,8 @@ export const createAvatar = async (avatar: AvatarModel) => {
 export const findAvatarByUserId = async (userId: number) => {
   // 准备查询
   const statement = `
-     SELECT * FROM avatar
+     SELECT * 
+     FROM avatar
      WHERE userId = ?
      ORDER BY avatar.id DESC
      LIMIT 1

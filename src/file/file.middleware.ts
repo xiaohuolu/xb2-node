@@ -13,7 +13,7 @@ export const fileFilter = (fileTypes: Array<string>) => {
     callback: FileFilterCallback
   ) => {
     // 测试文件类型
-    const allowed = fileTypes.some((type) => type === file.mimetype);
+    const allowed = fileTypes.some((type) => type == file.mimetype);
 
     if (allowed) {
       // 允许上传

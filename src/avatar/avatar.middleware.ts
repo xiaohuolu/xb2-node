@@ -34,7 +34,7 @@ export const avatarProcessor = async (
   const { file } = request;
 
   //   准备文件路径
-  const filePath = path.join(file.destination, "resized", "file.filename");
+  const filePath = path.join(file.destination, "resized", file.filename);
 
   //   处理头像文件
 

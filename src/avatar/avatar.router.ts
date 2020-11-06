@@ -19,6 +19,7 @@ router.post(
 /**
  *  头像服务
  */
+
 router.get("/users/:userId/avatar", avatarController.serve);
 
 /**
