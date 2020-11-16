@@ -135,7 +135,7 @@ export const index = async (
 ) => {
   // 获取评论列表
   try {
-    const comments = await getComments();
+    const comments = await getComments({ filter: request.filter });
 
     //  做出响应
     response.send(comments);
